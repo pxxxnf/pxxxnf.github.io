@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Datebot Webview</title>
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+	
+	body
+	{
+		margin: 0;
+		padding: 0;
+		font-family: 'Ubuntu', sans-serif;
+	}
+
+	button
+	{
+		width: 100px;
+		height: 100px;
+		border: none;
+		background-color: #fff;
+	}
+
+	.main_container
+	{
+		max-width: 500px;
+		width: 100%;
+		display: flex;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.button_container
+	{
+		max-width: 400px;
+		width: 95%;
+		display: flex;
+		margin: 0 auto;
+	}
+
+	#logo 
+	{
+		width: 100px;
+		border-radius: 900px;
+	}
+
+	.survey_data
+	{
+		background: linear-gradient(0deg, #252525 0.65%, rgba(0, 0, 0, 0.00) 100%);
+		width: 100%;
+		height: 80vh;
+		font-size: 35px;
+	}
+
+	.user_data
+	{
+		padding-top: 100%;
+	}
+
+	.user_descrition
+	{
+		font-size: 15px;
+		font-weight: 300;
+		padding-top: 15px;
+	}
+
+	.buttons
+	{
+		margin: 0 auto;
+		align-items: center;
+		display: flex;
+		padding-top: 20px;
+	}
+
+	.skipButton:active
+	{
+		opacity: 85%;
+	}
+
+	.photostepts
+	{
+		padding-top: 35px;
+		display: flex;
+		margin: 0 auto;
+		width: 150px;
+	}
+
+	.ps
+	{
+		width: 30%;
+		height: 5px;
+		background-color: #fff;
+		opacity: 50%;
+		border-radius: 900px;
+	}
+
+
+
+</style>
+
+
+
+</head>
+<body>
+<section class="main_section">
+	<div class="main_container">
+		<div class="survey_data" style="color: #fff;">
+			<div class="user_data">	
+				<div class="user_name" style="font-weight: 600;">Name, <span class="user_age" style="">age</span></div>
+				<div class="user_descrition">Here is description</div>
+				<div class="photostepts">
+					<div class="ps" style="opacity: 100%;"></div>
+					<div class="ps"></div>
+					<div class="ps"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="button_section">
+	<div class="button_container">
+		<div class="buttons">
+			<button class="skipButton" style="background-color: #D8D8D8; border-radius: 900px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 -960 960 960" width="30" height="30" fill='#777' ><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+			<button class="likeButton">
+				<img src="logo.png" id="logo">
+			</button>
+		</div>
+	</div>
+</section>
+
+</body>
+</html>
