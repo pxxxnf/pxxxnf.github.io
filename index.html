@@ -19,7 +19,13 @@
 		width: 100px;
 		height: 100px;
 		border: none;
-		background-color: #fff;
+		border-radius: 900px;
+	}
+
+	button svg 
+	{
+		width:30px; 
+		height:30px; 
 	}
 
 	.main_container
@@ -49,13 +55,14 @@
 	{
 		background: linear-gradient(0deg, #252525 0.65%, rgba(0, 0, 0, 0.00) 100%);
 		width: 100%;
-		height: 80vh;
+		height: 100vh;
 		font-size: 35px;
 	}
 
 	.user_data
 	{
-		padding-top: 100%;
+		margin-top: 120%;
+		display: inline-block;
 	}
 
 	.user_descrition
@@ -67,15 +74,15 @@
 
 	.buttons
 	{
-		margin: 0 auto;
+		margin: -150px auto 0px auto;
 		align-items: center;
 		display: flex;
-		padding-top: 20px;
+
 	}
 
 	.skipButton:active
 	{
-		opacity: 80%;
+		opacity: 85%;
 	}
 
 	.photostepts
@@ -96,6 +103,11 @@
 	}
 
 
+	.likeButton
+	{
+		background-color: #f5f4f2;
+		background-image: linear-gradient(315deg, #f5f4f2 0%, #ff4081 75%);
+	}
 
 </style>
 
@@ -122,9 +134,14 @@
 <section class="button_section">
 	<div class="button_container">
 		<div class="buttons">
-			<button class="skipButton" style="background-color: #D8D8D8; border-radius: 900px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 -960 960 960" width="30" height="30" fill='#777' ><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+			<button class="skipButton"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 -960 960 960" fill='#777' ><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
 			<button class="likeButton">
-				<img src="logo.png" id="logo">
+				<svg fill="#fff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+					 viewBox="0 0 230 230" xml:space="preserve">
+				<path d="M213.588,120.982L115,213.445l-98.588-92.463C-6.537,96.466-5.26,57.99,19.248,35.047l2.227-2.083
+					c24.51-22.942,62.984-21.674,85.934,2.842L115,43.709l7.592-7.903c22.949-24.516,61.424-25.784,85.936-2.842l2.227,2.083
+					C235.26,57.99,236.537,96.466,213.588,120.982z"/>
+				</svg>
 			</button>
 		</div>
 	</div>
